@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pongStyle.css">
+        <title>Pong</title>
+        <script src="pongCode.js"></script>
+        <script>window.addEventListener("keydown", function(e) { if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) { e.preventDefault(); } }, false);</script>
+    </head>
+
+    <body>
+        <a href="./"><h3>Home</h3></a>
+        <h1>Pong</h1>
+        <h5>Find a friend/aquiantance.</h5>
+        <h5>Press and release W and S or UP and DOWN to move your paddle!</h5>
+        <h5>Hit the ball with your paddle and don't let the ball get out your side of the box. Highest score wins!</h5>
+        <canvas id="board"></canvas>
+    </body>
+</html>

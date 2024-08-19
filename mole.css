@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    background-image: url("./mario-bg.jpg");
+    background-size: cover;
+    color: #000000;
+}
+
+/* Header styles */
+header {
+    background: #35424a;
+    color: #a4b3ff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #4b2f27;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+article {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#board {
+    width: 540px;
+    height: 540px;
+    background-image: url("./soil.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    flex-wrap: wrap;
+}
+
+#board div {
+    /* board = 540x540px. 1/3 = 180 = 9 180x180px tile in a 3x3 grid */
+    width: 180px;
+    height: 180px;
+    background-image: url("./pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    /* all img tags inside tile div tags */
+    width: 100px;
+    height: 100px;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.button {
+    top: 110px;
+    left: 840px;;
+    width: 60px;
+    height: 30px;
+    border: 4px solid black;
+    border-radius: 3px;
+    color: black;
+    background-color: white;
+    font-weight: 900;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute ;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #4f5753;
+    color: white;
+  }
+  
